@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+   
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./image/masjid.jpg);
+    font-family: Poppins;
+    background-color: #3a596f;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+    
+}
+
+h1{
+    text-wrap: nowrap;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: normal;
+    
+}
+
+h1 span{
+    
+    color: #4CA0FF;
+    font-weight: bold;
+}
+
+.container{
+    border-radius: 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: none;
+    flex-wrap: 1;
+
+    padding: 20px;
+    border-radius: 15;
+    max-width: 500px;
+    width: 100%;
+    
+}
+
+
+
+.dropdown, .text-box, .button{
+    margin: 30px 0;
+    opacity: 90%;
+    -webkit-text-stroke: 0.2px #020202;
+}
+
+
+
+.dropdown select{
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.feel{
+    font-size: 1.7rem;
+}
+.text-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    height: 200px;
+    color: #333;
+    right: 0;
+    overflow-y: auto;
+}
+
+
+
+.button button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #141538;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+
+
+}
+
+
+.button button:hover{
+    background-color: #333;
+
+
+}
+
+
+
+@media (max-width: 768px) {
+    .container{
+        padding: 15px;
+        max-width: 90%;
+    }
+}
+
+
+h1 {
+    font-size: 2rem;
+}
+
+
+p{
+    padding: 5px;
+}
+
+
+.source {
+    color: #17564a;
+    font-style: italic;
+}
+
+
+.verse p {
+    margin: 5px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    
+}
+
+.verse {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.text-box .arabic {
+   
+    font-family: 'Scheherazade New'; 
+    font-size: 1.4rem; 
+    font-weight: lighter;
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ text-overflow: ellipsis;
+ vertical-align: baseline;
+  direction: rtl;
+  line-height: 1.7;
+}
+
+
+@media (max-width: 768px){
+    .text-box {
+        height: auto;
+        max-height: 150px;
+    }
+    .verse p {
+        font-size: 0.9rem;
+    }
+}
+
+header {
+    
+    margin-left: 0;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+   padding-bottom: 10px;
+    color: rgb(74, 134, 136);
+    font-style: oblique;
+}
+
+h1 .Hadith{
+    color: #64c5b3;
+}
+

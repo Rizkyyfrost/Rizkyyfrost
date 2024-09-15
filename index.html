@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodVerse</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   
+    <div class="container">
+        <header>Produced by Yoobi</header>
+        <h1>Al-Quran <span>The Guidance</span> and</h1>
+        <h1>Hadith <span class="Hadith">The Seeker of Knowledge</span></h1>
+        <div class="dropdown">
+            <label class="feel" for="mood">Bagaimana perasaan anda?</label>
+            
+            <select id="mood">
+                <option value="malas">Malas</option>
+                <option value="Senang">Senang</option>
+                <option value="Takut">Takut</option>
+                <option value="Marah">Marah</option>
+                <option value="Bingung">Bingung</option>
+                <option value="Sedih">Sedih</option>
+            </select>
+        </div>
+        <div class="text-box" id="verseBox">
+            <h3 class="ayat"></h3>
+            <h2 class="verse"></h2>
+            <p class="opening"></p>
+            <div class="loader" id="loader"></div>   
+        </div>
+        <div class="button">
+            <button onclick="getVerse()">Beri aku petunjuk</button>
+        </div>
+    </div>
+
+</body>
+<script src="./content.json" id="quran-json" type="application/json"></script>
+<script src="script.js"></script>
+</html>
